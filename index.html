@@ -8,7 +8,15 @@
 </head>
 <body>
     <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1odt__vyHUFNKbOMuEn7fNpRsAkjvflUA/preview" width="800" height="450" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        <video id="videoPlayer" width="800" height="450" controls loop muted>
+            <source src="https://drive.google.com/uc?export=download&id=1odt__vyHUFNKbOMuEn7fNpRsAkjvflUA" type="video/mp4">
+        </video>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('videoPlayer');
+            video.play();
+        });
+    </script>
 </body>
 </html>
